@@ -4,7 +4,7 @@
 
 > Trilha Explorer
 
-Projeto desenvolvido durante o evento Next Level Week da Rocketseat.
+Projeto desenvolvido durante o evento Next Level Week #9 da Rocketseat.
 
 [🔗 Clique aqui para acessar](https://matheusvaz-dev.github.io/nlw-esports-explorer/)
 
