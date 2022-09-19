@@ -52,7 +52,7 @@ header div img {
 }
 
 main {
-  max-width: 580px;
+  max-width: 544px;
   width: 90%;
   margin: 32px auto;
   display: grid;
@@ -100,6 +100,11 @@ section ul li {
 
 section ul li:hover {
   transform: scale(1.1);
+}
+
+.channel-list,
+.social-list {
+  gap: 16px;
 }
 
 .games-list img {
@@ -154,4 +159,15 @@ main section:nth-child(3) {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Swiper */
+
+section {
+  overflow: hidden;
+}
+
+section ul {
+  flex-wrap: nowrap;
+  gap: 0;
 }

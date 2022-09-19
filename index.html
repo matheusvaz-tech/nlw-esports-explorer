@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -29,47 +34,79 @@
           <h2>Meus jogos</h2>
           <p>Os games que eu mais curto jogar!</p>
 
-          <ul class="games-list">
-            <li>
-              <a
-                href="https://www.twitch.tv/directory/game/League%20of%20Legends"
-                target="_blank"
-                ><img
-                  src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg"
-                  alt="Imagem do jogo League of Legends"
-              /></a>
-            </li>
+          <div class="swiper mySwiper">
+            <ul class="games-list swiper-wrapper">
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/League%20of%20Legends"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg"
+                    alt="Imagem do jogo League of Legends"
+                /></a>
+              </li>
 
-            <li>
-              <a
-                href="https://www.twitch.tv/directory/game/VALORANT"
-                target="_blank"
-                ><img
-                  src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg"
-                  alt="Imagem do jogo Valorant"
-              /></a>
-            </li>
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/VALORANT"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg"
+                    alt="Imagem do jogo Valorant"
+                /></a>
+              </li>
 
-            <li>
-              <a
-                href="https://www.twitch.tv/directory/game/World%20of%20Warcraft"
-                target="_blank"
-                ><img
-                  src="https://static-cdn.jtvnw.net/ttv-boxart/18122-285x380.jpg"
-                  alt="Imagem do jogo Warcraft"
-              /></a>
-            </li>
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/World%20of%20Warcraft"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/18122-285x380.jpg"
+                    alt="Imagem do jogo Warcraft"
+                /></a>
+              </li>
 
-            <li>
-              <a
-                href="https://www.twitch.tv/directory/game/Minecraft"
-                target="_blank"
-                ><img
-                  src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-188x250.jpg"
-                  alt="Imagem do jogo Minecraft"
-              /></a>
-            </li>
-          </ul>
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/Minecraft"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-188x250.jpg"
+                    alt="Imagem do jogo Minecraft"
+                /></a>
+              </li>
+
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-188x250.jpg"
+                    alt="Imagem do jogo Counter Strike"
+                /></a>
+              </li>
+
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/Fortnite"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/33214-188x250.jpg"
+                    alt="Imagem do jogo Fortnite"
+                /></a>
+              </li>
+
+              <li class="swiper-slide">
+                <a
+                  href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V"
+                  target="_blank"
+                  ><img
+                    src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg"
+                    alt="Imagem do jogo GTA-V"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -240,5 +277,11 @@
         </div>
       </section>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", { slidesPerView: 4 });
+    </script>
   </body>
 </html>
